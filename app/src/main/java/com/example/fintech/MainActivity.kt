@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnHome = findViewById<Button>(R.id.btnHome)
-        btnProfil = findViewById<Button>(R.id.btnProfil)
-        btnSetting = findViewById<Button>(R.id.btnSettiing)
+        btnHome = findViewById(R.id.btnHome)
+        btnProfil = findViewById(R.id.btnProfil)
+        btnSetting = findViewById(R.id.btnSettiing)
 
         btnHome.setOnClickListener { loadFragment(HomeFragment()) }
         btnProfil.setOnClickListener { loadFragment(ProfilFragment()) }
